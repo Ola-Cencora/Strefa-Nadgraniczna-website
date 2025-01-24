@@ -1,0 +1,13 @@
+@use "../scss/vars";
+
+body {
+  font-family: vars.$font-text;
+  background-color: vars.$color-light;
+  color: vars.$color-dark;
+  margin: 0;
+
+  h1,
+  h2 {
+    font-family: vars.$font-header;
+  }
+}

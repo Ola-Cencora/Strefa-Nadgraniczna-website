@@ -1,0 +1,12 @@
+body {
+  font-family: "Montserrat", serif;
+  background-color: #fafafa;
+  color: #222222;
+  margin: 0;
+}
+body h1,
+body h2 {
+  font-family: "DM Serif Display", serif;
+}
+
+/*# sourceMappingURL=style.css.map */
