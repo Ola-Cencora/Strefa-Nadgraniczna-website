@@ -1,0 +1,22 @@
+@use "../vars";
+
+.button {
+  background-color: vars.$color-primary;
+  color: vars.$color-light;
+  border: none;
+  padding: vars.$basic-size * 2 vars.$basic-size * 3;
+  border-radius: 40px;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  transition: vars.$transition;
+  text-transform: uppercase;
+
+  a {
+    text-decoration: none;
+    color: vars.$color-light;
+  }
+
+  &:hover {
+    background-color: vars.$color-secondary;
+  }
+}

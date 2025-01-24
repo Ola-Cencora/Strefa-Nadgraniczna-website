@@ -140,5 +140,23 @@ body h2 {
     display: none;
   }
 }
+.button {
+  background-color: #529371;
+  color: #fafafa;
+  border: none;
+  padding: 24px 36px;
+  border-radius: 40px;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+.button a {
+  text-decoration: none;
+  color: #fafafa;
+}
+.button:hover {
+  background-color: #47705b;
+}
 
 /*# sourceMappingURL=style.css.map */
