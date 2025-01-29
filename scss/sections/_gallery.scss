@@ -1,0 +1,27 @@
+@use "../vars";
+
+.swiper {
+  width: 100%;
+  height: 60vh;
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: vars.$color-primary;
+  }
+
+  .swiper-wrapper {
+    height: 100%;
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

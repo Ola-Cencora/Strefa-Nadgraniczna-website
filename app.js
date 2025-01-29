@@ -1,4 +1,3 @@
-// HEADER
 // navigation
 
 const BURGER_MENU = document.querySelector(".hamburger");
@@ -22,4 +21,31 @@ NAVIGATION_LINKS.forEach((link) => {
     NAVIGATION.classList.remove("show");
     BURGER_MENU.classList.remove("show");
   });
+});
+
+// swiper slider
+
+const swiper = new Swiper(".swiper", {
+  slidesPerView: 1,
+  loop: true,
+  spaceBetween: 10,
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+  },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
