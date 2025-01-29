@@ -214,6 +214,38 @@ body section {
   object-fit: cover;
 }
 
+.about {
+  text-align: center;
+}
+.about__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about__info___img {
+  width: 100%;
+  max-width: 600px;
+}
+.about__info___img img {
+  width: 100%;
+}
+.about__info___txt {
+  max-width: 600px;
+}
+
+@media (min-width: 62rem) {
+  .about__info {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .about__info___img {
+    max-width: 800px;
+  }
+  .about__info___txt {
+    margin: 0 60px;
+  }
+}
 .button {
   background-color: #529371;
   color: #fafafa;

@@ -1,0 +1,40 @@
+@use "../vars";
+
+.about {
+  text-align: center;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &___img {
+      width: 100%;
+      max-width: 600px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &___txt {
+      max-width: 600px;
+    }
+  }
+}
+
+@media (min-width: vars.$laptop) {
+  .about__info {
+    flex-direction: row;
+    gap: 40px;
+
+    &___img {
+      max-width: 800px;
+    }
+
+    &___txt {
+      margin: 0 60px;
+    }
+  }
+}
