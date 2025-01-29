@@ -36,3 +36,23 @@
     }
   }
 }
+
+@media (min-width: vars.$tablet) {
+  .strefa__info {
+    margin: 0 80px;
+  }
+}
+
+@media (min-width: vars.$laptop) {
+  .strefa__info {
+    margin: 0 80px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 90rem) {
+    .strefa__info {
+      margin: 0 100px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
