@@ -14,4 +14,16 @@ body {
   section {
     margin: 40px 0;
   }
+
+  .sectionTitle {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 90rem) {
+  body {
+    .sectionTitle {
+      font-size: 5rem;
+    }
+  }
 }
