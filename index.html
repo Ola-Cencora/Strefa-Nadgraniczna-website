@@ -165,10 +165,39 @@
           </div>
         </section>
         <section id="kontakt" class="contact">
-          <h2 class="sectionTitle">Konakt</h2>
-          <p>telefon</p>
-          <p>email</p>
-          <div>formularz</div>
+          <h2 class="sectionTitle">Kontakt</h2>
+          <div class="contact__wrapper">
+            <form class="contact__form" autocomplete="off">
+              <label for="name">twoje imię</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                autocomplete="new-password"
+              />
+              <label for="email">twój e-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                autocomplete="off"
+              />
+              <label for="message">twoje pytanie</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="10"
+                required
+              ></textarea>
+              <button class="button-light" type="submit">Wyślij</button>
+            </form>
+            <div class="contact__info">
+              <p>123 456 789</p>
+              <p>strefa@strefa.pl</p>
+            </div>
+          </div>
         </section>
         <section id="cennik" class="tariff">
           <div>cennik</div>

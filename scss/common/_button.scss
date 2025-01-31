@@ -20,3 +20,13 @@
     background-color: vars.$color-secondary;
   }
 }
+
+.button-light {
+  @extend .button;
+  background-color: vars.$color-light;
+  color: vars.$color-primary;
+
+  &:hover {
+    background-color: vars.$color-primary;
+  }
+}

@@ -1,0 +1,55 @@
+@use "../vars";
+
+.contact {
+  text-align: center;
+  background-color: vars.$color-primary;
+  padding: 40px 0;
+  color: vars.$color-light;
+
+  &__wrapper {
+    display: grid;
+    gap: vars.$basic-size * 3;
+  }
+
+  &__info {
+    letter-spacing: 0.1em;
+    font-size: 1.2rem;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    gap: vars.$basic-size * 2;
+    width: 90%;
+    max-width: 600px;
+
+    input,
+    textarea {
+      background-color: vars.$color-primary;
+      border: none;
+      border-bottom: solid 1px vars.$color-light;
+      padding-bottom: vars.$basic-size;
+      width: 100%;
+      color: vars.$color-light;
+      box-sizing: border-box;
+
+      &:focus {
+        outline: none;
+        border-bottom: solid 1px vars.$color-light;
+        box-shadow: 0 2px 0 vars.$color-light;
+      }
+    }
+
+    button {
+      align-self: center;
+    }
+  }
+}
+
+@media (min-width: vars.$laptop) {
+  .contact__wrapper {
+    gap: vars.$basic-size * 5;
+  }
+}
