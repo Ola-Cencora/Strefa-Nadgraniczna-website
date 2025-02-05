@@ -302,6 +302,27 @@ body .sectionTitle {
     gap: 60px;
   }
 }
+.tariff {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 40px;
+  gap: 30px;
+}
+.tariff__reservations, .tariff__map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (min-width: 62rem) {
+  .tariff {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
 .button, .button-light {
   background-color: #529371;
   color: #fafafa;
