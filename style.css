@@ -33,7 +33,6 @@ body .sectionTitle {
 
 .menu {
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
   padding: 24px;
   z-index: 10;
@@ -44,7 +43,6 @@ body .sectionTitle {
   color: #fafafa;
   letter-spacing: 0.1em;
   z-index: 3;
-  position: fixed;
 }
 .menu__logo p {
   margin: 0;
@@ -73,7 +71,6 @@ body .sectionTitle {
   list-style-type: none;
   gap: 24px;
   padding: 0;
-  position: fixed;
 }
 .menu__navigation__links li a {
   text-decoration: none;
@@ -96,7 +93,6 @@ body .sectionTitle {
   height: 24px;
   top: 36px;
   right: 36px;
-  position: fixed;
   overflow: hidden;
   cursor: pointer;
   z-index: 3;
@@ -321,6 +317,7 @@ body .sectionTitle {
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
+    gap: 100px;
   }
 }
 .button, .button-light {

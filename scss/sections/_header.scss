@@ -15,7 +15,6 @@
 
 .menu {
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
   padding: vars.$basic-size * 2;
   z-index: 10;
@@ -26,7 +25,6 @@
     color: vars.$color-light;
     letter-spacing: 0.1em;
     z-index: 3;
-    position: fixed;
 
     p {
       margin: 0;
@@ -58,7 +56,6 @@
       list-style-type: none;
       gap: vars.$basic-size * 2;
       padding: 0;
-      position: fixed;
 
       li a {
         text-decoration: none;
@@ -86,7 +83,6 @@
   height: vars.$basic-size * 2;
   top: vars.$basic-size * 3;
   right: vars.$basic-size * 3;
-  position: fixed;
   overflow: hidden;
   cursor: pointer;
   z-index: 3;
