@@ -8,6 +8,35 @@
     margin: 40px 0;
     font-size: 3rem;
   }
+
+  &__ms {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    flex-direction: column;
+
+    &___icons {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      justify-content: center;
+
+      &___icon {
+        width: 2rem;
+
+        svg {
+          width: 100%;
+          fill: vars.$color-dark;
+          transition: vars.$transition;
+
+          &:hover {
+            fill: vars.$color-primary;
+          }
+        }
+      }
+    }
+  }
+
   &__info {
     margin: 0 12px;
     display: grid;

@@ -155,6 +155,29 @@ body .sectionTitle {
   margin: 40px 0;
   font-size: 3rem;
 }
+.strefa__ms {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  flex-direction: column;
+}
+.strefa__ms___icons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+.strefa__ms___icons___icon {
+  width: 2rem;
+}
+.strefa__ms___icons___icon svg {
+  width: 100%;
+  fill: #222222;
+  transition: all 0.3s ease-in-out;
+}
+.strefa__ms___icons___icon svg:hover {
+  fill: #529371;
+}
 .strefa__info {
   margin: 0 12px;
   display: grid;
