@@ -18,6 +18,17 @@ body {
   .sectionTitle {
     font-size: 3rem;
   }
+
+  footer {
+    text-align: right;
+    font-size: 10px;
+    padding: vars.$basic-size;
+
+    a {
+      text-decoration: none;
+      color: vars.$color-dark;
+    }
+  }
 }
 
 @media (min-width: 90rem) {
