@@ -202,7 +202,12 @@
         <section id="kontakt" class="contact">
           <h2 class="sectionTitle">Kontakt</h2>
           <div class="contact__wrapper">
-            <form class="contact__form" autocomplete="off">
+            <form
+              class="contact__form"
+              autocomplete="off"
+              action="https://formspree.io/f/xgvozjpn"
+              method="POST"
+            >
               <label for="name">twoje imię</label>
               <input
                 type="text"
@@ -227,7 +232,9 @@
                 required
               ></textarea>
               <button class="button-light" type="submit">Wyślij</button>
+              <p class="contact__form___status"></p>
             </form>
+
             <div class="contact__info">
               <p>123 456 789</p>
               <p>strefa@strefa.pl</p>

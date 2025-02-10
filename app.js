@@ -49,3 +49,43 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// contact form
+
+const CONTACT_FORM = document.querySelector(".contact__form");
+
+async function handleSubmit(event) {
+  event.preventDefault();
+  const FORM_STATUS = document.querySelector(".contact__form___status");
+  var data = new FormData(event.target);
+  fetch(event.target.action, {
+    method: CONTACT_FORM.method,
+    body: data,
+    headers: {
+      Accept: "application/json",
+    },
+  })
+    .then((response) => {
+      if (response.ok) {
+        FORM_STATUS.innerHTML =
+          "Dzięki za wiadomość! Postaramy się odpowiedzieć jak najszybciej :)";
+        CONTACT_FORM.reset();
+      } else {
+        response.json().then((data) => {
+          if (Object.hasOwn(data, "errors")) {
+            FORM_STATUS.innerHTML = data["errors"]
+              .map((error) => error["message"])
+              .join(", ");
+          } else {
+            FORM_STATUS.innerHTML =
+              "Ups! Coś poszło nie tak, spróbuj wysłać pytanie jeszcze raz lub skontaktuj się z nami bezpośrednio:";
+          }
+        });
+      }
+    })
+    .catch((error) => {
+      FORM_STATUS.innerHTML =
+        "Ups! Coś poszło nie tak, spróbuj wysłać pytanie jeszcze raz lub skontaktuj się z nami bezpośrednio:";
+    });
+}
+CONTACT_FORM.addEventListener("submit", handleSubmit);

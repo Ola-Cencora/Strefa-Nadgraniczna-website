@@ -87,7 +87,7 @@ body footer a {
   text-transform: lowercase;
   letter-spacing: 0.05em;
   font-size: 2.5rem;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .menu__navigation__links li a:hover {
   color: #529371;
@@ -107,7 +107,7 @@ body footer a {
   z-index: 3;
 }
 .hamburger__inner {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
   border: 0;
   position: relative;
   width: 36px;
@@ -118,7 +118,7 @@ body footer a {
   left: 0;
   right: 0;
   border-bottom: 2px solid #fafafa;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .hamburger__inner::before {
   top: -6px;
@@ -182,7 +182,7 @@ body footer a {
 .strefa__ms___icons___icon svg {
   width: 100%;
   fill: #222222;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .strefa__ms___icons___icon svg:hover {
   fill: #529371;
@@ -321,6 +321,10 @@ body footer a {
   border-bottom: solid 1px #fafafa;
   box-shadow: 0 2px 0 #fafafa;
 }
+.contact__form___status {
+  margin: 16px auto;
+  font-size: 1.2rem;
+}
 .contact__form button {
   align-self: center;
 }
@@ -355,20 +359,26 @@ body footer a {
 .button, .button-light {
   background-color: #529371;
   color: #fafafa;
-  border: none;
+  border: 1px solid transparent;
   padding: 24px 36px;
   border-radius: 40px;
   font-size: 1rem;
   letter-spacing: 0.1em;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .button a, .button-light a {
   text-decoration: none;
   color: #fafafa;
+  transition: all 0.5s ease-in-out;
 }
 .button:hover, .button-light:hover {
-  background-color: #47705b;
+  background-color: #fafafa;
+  border-color: #529371;
+}
+.button:hover a, .button-light:hover a {
+  color: #529371;
 }
 
 .button-light {
@@ -376,7 +386,9 @@ body footer a {
   color: #529371;
 }
 .button-light:hover {
+  color: #fafafa;
   background-color: #529371;
+  border-color: #fafafa;
 }
 
 /*# sourceMappingURL=style.css.map */
