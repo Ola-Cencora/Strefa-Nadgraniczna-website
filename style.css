@@ -162,13 +162,24 @@ body footer a {
 }
 .strefa h1 {
   margin: 40px 0;
-  font-size: 3rem;
 }
 .strefa__ms {
   display: flex;
   justify-content: center;
-  padding-bottom: 20px;
+  padding: 0 30px 20px;
   flex-direction: column;
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+.strefa__ms p {
+  margin: 6px 0;
+}
+.strefa__ms span {
+  font-family: "DM Serif Display", serif;
+  font-style: italic;
+  font-size: 2rem;
+  margin: 15px 0 30px;
 }
 .strefa__ms___icons {
   display: flex;
