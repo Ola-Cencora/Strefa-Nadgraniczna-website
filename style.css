@@ -199,14 +199,16 @@ body footer a {
   fill: #529371;
 }
 .strefa__info {
-  margin: 0 12px;
+  margin: 50px 12px;
   display: grid;
   gap: 48px;
+  justify-items: center;
 }
 .strefa__info__box {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 600px;
 }
 .strefa__info__box___img {
   width: 160px;
@@ -224,19 +226,18 @@ body footer a {
 
 @media (min-width: 37.5rem) {
   .strefa__info {
-    margin: 0 80px;
+    margin: 50px 80px;
   }
 }
 @media (min-width: 62rem) {
   .strefa__info {
-    margin: 0 80px;
+    margin: 80px;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 62rem) and (min-width: 90rem) {
   .strefa__info {
-    margin: 0 100px;
-    grid-template-columns: repeat(3, 1fr);
+    margin: 80px 200px;
   }
 }
 .swiper {
