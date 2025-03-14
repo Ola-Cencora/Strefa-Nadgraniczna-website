@@ -13,13 +13,25 @@ body section {
 }
 body .sectionTitle {
   font-size: 3rem;
+  position: relative;
+  display: inline-block;
+}
+body .sectionTitle::after {
+  content: "";
+  width: 120%;
+  height: 2px;
+  background-color: #222222;
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  transform: translateX(-50%);
 }
 body footer {
   text-align: right;
   font-size: 10px;
   padding: 12px;
 }
-body footer a {
+body a {
   text-decoration: none;
   color: #222222;
 }
@@ -198,6 +210,12 @@ body footer a {
 .strefa__ms___icons___icon svg:hover {
   fill: #529371;
 }
+.strefa__ms a {
+  transition: all 0.5s ease-in-out;
+}
+.strefa__ms a:hover {
+  color: #529371;
+}
 .strefa__info {
   margin: 50px 12px;
   display: grid;
@@ -237,7 +255,10 @@ body footer a {
 }
 @media (min-width: 62rem) and (min-width: 90rem) {
   .strefa__info {
-    margin: 80px 200px;
+    margin: 200px;
+  }
+  .strefa__info h2 {
+    font-size: 2.5rem;
   }
 }
 .swiper {
@@ -292,6 +313,7 @@ body footer a {
   }
   .about__info___txt {
     margin: 0 60px;
+    font-size: 1.2rem;
   }
 }
 .contact {
@@ -299,6 +321,9 @@ body footer a {
   background-color: #529371;
   padding: 40px 0;
   color: #fafafa;
+}
+.contact h2::after {
+  background-color: #fafafa;
 }
 .contact__wrapper {
   display: grid;
@@ -346,28 +371,10 @@ body footer a {
     gap: 60px;
   }
 }
-.tariff {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 40px;
-  gap: 30px;
-}
-.tariff__reservations, .tariff__map {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+.location {
+  text-align: center;
 }
 
-@media (min-width: 62rem) {
-  .tariff {
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 100px;
-  }
-}
 .button, .button-light {
   background-color: #529371;
   color: #fafafa;

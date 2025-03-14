@@ -6,6 +6,10 @@
   padding: 40px 0;
   color: vars.$color-light;
 
+  h2::after {
+    background-color: vars.$color-light;
+  }
+
   &__wrapper {
     display: grid;
     gap: vars.$basic-size * 3;

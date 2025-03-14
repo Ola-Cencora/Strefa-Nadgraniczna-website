@@ -17,17 +17,30 @@ body {
 
   .sectionTitle {
     font-size: 3rem;
+    position: relative;
+    display: inline-block;
+
+    &::after {
+      content: "";
+      width: 120%;
+      height: 2px;
+      background-color: vars.$color-dark;
+      position: absolute;
+      left: 50%;
+      bottom: -5px;
+      transform: translateX(-50%);
+    }
   }
 
   footer {
     text-align: right;
     font-size: 10px;
     padding: vars.$basic-size;
+  }
 
-    a {
-      text-decoration: none;
-      color: vars.$color-dark;
-    }
+  a {
+    text-decoration: none;
+    color: vars.$color-dark;
   }
 }
 
