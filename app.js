@@ -28,22 +28,20 @@ NAVIGATION_LINKS.forEach((link) => {
 const swiper = new Swiper(".swiper", {
   slidesPerView: 1,
   loop: true,
-  spaceBetween: 10,
+  spaceBetween: 7,
   breakpoints: {
     640: {
       slidesPerView: 2,
     },
-    768: {
+    1440: {
       slidesPerView: 3,
-    },
-    1024: {
-      slidesPerView: 4,
     },
   },
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
   },
+  speed: 1000,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
