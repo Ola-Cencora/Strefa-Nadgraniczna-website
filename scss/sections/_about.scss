@@ -19,6 +19,7 @@
     }
 
     &___txt {
+      padding: 0 12px;
       max-width: 600px;
     }
   }
@@ -27,15 +28,15 @@
 @media (min-width: vars.$laptop) {
   .about__info {
     flex-direction: row;
-    gap: 40px;
 
     &___img {
+      width: 50%;
       max-width: 800px;
     }
 
     &___txt {
-      margin: 0 60px;
-      font-size: 1.2rem;
+      width: 50%;
+      padding: 0 60px;
     }
   }
 }
