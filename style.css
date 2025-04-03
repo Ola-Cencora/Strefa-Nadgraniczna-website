@@ -8,9 +8,6 @@ body h1,
 body h2 {
   font-family: "DM Serif Display", serif;
 }
-body section {
-  margin: 40px 0;
-}
 body .sectionTitle {
   font-size: 3rem;
   position: relative;
@@ -183,7 +180,6 @@ body a {
   }
 }
 .strefa {
-  margin-top: 40px;
   text-align: center;
 }
 .strefa h1 {
@@ -256,6 +252,7 @@ body a {
 
 .about {
   text-align: center;
+  margin-top: 40px;
 }
 .about__info {
   display: flex;
@@ -293,6 +290,7 @@ body a {
   background-color: #529371;
   padding: 40px 0;
   color: #faf7f2;
+  margin-top: 40px;
 }
 .contact h2::after {
   background-color: #faf7f2;
@@ -344,6 +342,7 @@ body a {
 }
 .location {
   text-align: center;
+  margin-top: 40px;
 }
 .location__map {
   display: flex;
